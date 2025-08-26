@@ -1,0 +1,21 @@
+h1 {
+	color: #ee7b22;
+	font-size: 2.5rem;
+	text-align: right;
+	margin-top: 30px;
+}
+
+p {
+	color: #555;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 350px;
+	border-radius: 10px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
