@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link rel="stylesheet" href="feliz.css">
+</head>
+
+<body>
+    <!-- Música de Spotify -->
+    <div style="max-width:500px;margin:20px auto 0 auto;">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/68zgpheG0JiI7dIluSift4?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <!-- Música de fondo -->
+    <audio id="bgmusic" src="musica.mp3" autoplay loop hidden></audio>
+    <div class="header">
+        <h1>¡Feliz Cumpleaños pa!</h1>
+    </div>
+
+    <div class="button-group">
+        <button class="btn" onclick="showImage(0)">Sorpresa 1</button>
+        <button class="btn" onclick="showImage(1)">Sorpresa 2</button>
+        <button class="btn" onclick="showImage(2)">Sorpresa 3</button>
+        <button class="btn" onclick="showImage(3)">Sorpresa 4</button>
+    </div>
+
+    <!-- Modal para mostrar la imagen -->
+    <div id="imgModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); justify-content:center; align-items:center;">
+        <span onclick="closeModal()" style="position:absolute; top:30px; right:50px; color:#fff; font-size:2.5rem; cursor:pointer;">&times;</span>
+        <img id="modalImg" src="" alt="Sorpresa" style="max-width:80vw; max-height:80vh; border-radius:16px; box-shadow:0 0 24px #000;">
+    </div>
+
+    <script>
+        // Rutas de imágenes de ejemplo (ajusta según tus imágenes reales)
+        const images = [
+            'Recuerdo10.jpeg',
+            'Recurdo20.jpeg',
+            'Recuerdo 30.png',
+            'Recuerdo40.jpeg',
+            'feliz.css' // Puedes cambiar por otra imagen si tienes más, o dejar un mensaje si no hay más imágenes
+        ];
+        function showImage(idx) {
+            document.getElementById('modalImg').src = images[idx];
+            document.getElementById('imgModal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('imgModal').style.display = 'none';
+            document.getElementById('modalImg').src = '';
+        }
+        // Cierra el modal si se hace click fuera de la imagen
+        window.onclick = function(event) {
+            const modal = document.getElementById('imgModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+
+    <p>Hoy celebro no solo tu vida, sino todos los momentos que hemos compartido, las historias que hemos construido juntos y el sentimiento profundo que me une a ti. En cada recuerdo hay aprecio, en cada enseñanza tuya hay sabiduría, y en cada gesto tuyo hay amor. Gracias por ser mi guía, mi ejemplo y mi fuerza. Te quiero con todo mi corazón, papá. ¡Feliz cumpleaños!</p>
+
+</body>
+</html>
