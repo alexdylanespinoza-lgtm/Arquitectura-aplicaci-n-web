@@ -1,0 +1,33 @@
+html{
+    font-size: 10px; 
+    background-color: rgba(197, 3, 3, 0.491);  
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace;  }
+
+  div {
+      font-size: 4rem;
+      background-color: rgb(244, 56, 188);
+      width: 90%;
+      border: 1px solid rgb(17, 8, 10); 
+      margin: 20px;;
+      border-radius: 15px;  
+      display: block;
+      margin: 0px auto;
+      box-shadow: 14px 15px 34px 0px rgba(93,114,211,0.75);
+-webkit-box-shadow: 14px 15px 34px 0px rgba(93,114,211,0.75);
+-moz-box-shadow: 14px 15px 34px 0px rgba(93,114,211,0.75);
+    }
+
+   
+  p {
+    font-size: 1.5rem;  }
+
+#hijo{
+    font-size: 1rem;  } 
+
+
+    @media (max-width: 600px) {
+        div {
+            background-color: rgb(15, 15, 103);
+            font-size: 2rem;  }
+    }
