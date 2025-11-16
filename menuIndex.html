@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menú - Restaurante</title>
+	<link rel="stylesheet" href="menu.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container">
+			<h1 class="brand">Albistro</h1>
+			<div class="cart">
+				<button id="cartBtn" class="cart-btn">Carrito (<span id="cartCount">0</span>)</button>
+			</div>
+		</div>
+		<p class="tagline">Sabores ajustados a tu gusto</p>
+	</header>
+
+	<nav class="filters container">
+		<button class="filter" data-cat="Temporada">Temporada</button>
+		<button class="filter" data-cat="Bebidas Frias">Bebidas Frias</button>
+		<button class="filter" data-cat="Bebidas Calientes">Bebidas Calientes</button>
+		<button class="filter" data-cat="Postres">Postres</button>
+		<button class="filter" data-cat="Desayunos">Desayunos</button>
+		<button class="filter" data-cat="Especiales">Especiales</button>
+	</nav>
+
+	<main class="container menu-grid" id="menu">
+		<!-- Items: data-category and data-price used by JS -->
+		<article class="menu-item" data-category="Bebidas Frias" data-price="55">
+			<div class="thumb" style="background-image: url(smothies.png)"></div>
+			<div class="meta">
+				<h3>Smoothies</h3>
+				<p class="desc">Blueberry, Mango y Fresa</p>
+				<div class="row">
+					<div class="price">$55</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="menu-item" data-category="Bebidas Frias" data-price="60">
+			<div class="thumb" style="background-image: url(Frappes.png);"></div>
+			<div class="meta">
+				<h3>Frappes</h3>
+				<p class="desc">Original, Oreo, Chocolate, Matcha, Chai y Taro</p>
+				<div class="row">
+					<div class="price">$60</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Frias" data-price="55">
+			<div class="thumb" style="background-image: url(Malteadas_files/);"></div>
+			<div class="meta">
+				<h3>Malteadas</h3>
+				<p class="desc">Chocolate, Vainilla y Fresa</p>
+				<div class="row">
+					<div class="price">$55</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Frias" data-price="35">
+			<div class="thumb" style="background-image: url( );"></div>
+			<div class="meta">
+				<h3>Jugo de Naranja</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$35</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Frias" data-price="35">
+			<div class="thumb" style="background-image: url( );"></div>
+			<div class="meta">
+				<h3>Jugo de Zanahoria</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$35</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Frias" data-price="40">
+			<div class="thumb" style="background-image: url( );"></div>
+			<div class="meta">
+				<h3>Jugo Verde</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$40</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Frias" data-price="35">
+			<div class="thumb" style="background-image: url( );"></div>
+			<div class="meta">
+				<h3>Refrescos</h3>
+				<p class="desc">Coca-Cola(regular y light), Sprite, Sidral y Fanta</p>
+				<div class="row">
+					<div class="price">$35</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Frias" data-price="35">
+			<div class="thumb" style="background-image: url( );"></div>
+			<div class="meta">
+				<h3>Agua Embotellada</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$35</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Calientes" data-price="50">
+			<div class="thumb" style="background-image: url( );"></div>
+			<div class="meta">
+				<h3>Cafe Espresso</h3>
+				<p class="desc">Doble, Cortado y Doble Cortado</p>
+				<div class="row">
+					<div class="price">$50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="menu-item" data-category="Bebidas Calientes" data-price="10.00">
+			<div class="thumb" style="background-image: url( );"></div>
+			<div class="meta">
+				<h3>Americano</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$10.00</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="menu-item" data-category="Bebidas Calientes" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Descafeinado</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="menu-item" data-category="Bebidas Calientes" data-price="4.00">
+			<div class="thumb" style="background-image: url( );"></div>
+			<div class="meta">
+				<h3>Capuchino Clasico</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$4.00</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Calientes" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Albistro</h3>
+				<p class="desc">Bebida a base de leche vegetal de Soya, Almendra o Coco</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Calientes" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Baffe</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Calientes" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Chocolate Caliente</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Calientes" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Te</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Calientes" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Tisana</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Calientes" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Matcha</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Calientes" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Te Chai</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Bebidas Calientes" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Taro</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Postres" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Pastel Casero</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Postres" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Brownie</h3>
+				<p class="desc">Con Helado</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Postres" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Galletas</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Postres" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Gelatina</h3>
+				<p class="desc"></p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Desayunos" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+				<h3>Chilaquiles Rojos</h3>
+				<p class="desc">Deliciosos chilaquiles con salsa roja de la casa, acompañados con huevo al gusto o poche, Frijoles, Queso, Crema y Cebolla</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Desayunos" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Chilaquiles Verdes</h3>
+				<p class="desc">Deliciosos chilaquiles con salsa verde de la casa, acompañados con huevo al gusto o poche, Frijoles, Queso, Crema y Cebolla</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Desayunos" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Chilaquiles Guajillo</h3>
+				<p class="desc">Deliciosos chilaquiles con salsa de chile guajillo, acompañados con huevo al gusto o poche, Frijoles, Queso, Crema y Cebolla</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Desayunos" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Ricos Molletes</h3>
+				<p class="desc">Bolillito tostado partido por mitad con frijoles y queso gratinado, acompañado con pico de gallo y salsa</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Desayunos" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Enfrijoladas de la Casa</h3>
+				<p class="desc">Tortilla frita rellena de queso bañadas en salsa de frijoles con queso y crema </p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Desayunos" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Tostada Poche</h3>
+				<p class="desc">Exquisito huevo poche, servidos con pan tostado,tomate asado, espinaca y pesto</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Desayunos" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Hot Cakes</h3>
+				<p class="desc">3 piezas deliciosas de Hot Cakes servidos con crema batida y frutilla</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+        <article class="menu-item" data-category="Desayunos" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Omelette de Pavo</h3>
+				<p class="desc">Riquisimo omelette con jamon de pavo y queso, servido ejotes y papa cambray</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="menu-item" data-category="Desayunos" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Omelette de Champiñon y Espinacas</h3>
+				<p class="desc">Riquisimo omelette con champiñon, espinaca y queso, servido ejotes y papa cambray</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="menu-item" data-category="Desayunos" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Coctel de Fruta</h3>
+				<p class="desc">Delicioso coctel con Melon, Papaya y Manzan, servido con yogurt naturalmiel y granola.</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+		<article class="menu-item" data-category="Temporada" data-price="3.50">
+			<div class="thumb" style="background-image: url( ); background-size:cover;"></div>
+			<div class="meta">
+				<h3>Pan de Muerto</h3>
+				<p class="desc">Delicioso pan de muerto relleno de chocolate caliente</p>
+				<div class="row">
+					<div class="price">$3.50</div>
+					<button class="add-btn">Agregar</button>
+				</div>
+			</div>
+		</article>
+
+	</main>
+
+	<!-- Carrito modal simple -->
+	<div id="cartModal" class="cart-modal" aria-hidden="true">
+		<div class="cart-content">
+			<button class="close" id="closeCart">×</button>
+			<h2>Carrito</h2>
+			<div id="cartItems"></div>
+			<div class="cart-footer">
+				<div>Total: $<span id="cartTotal">0.00</span></div>
+				<button id="checkout" class="checkout">Pagar</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="menu.js"></script>
+</body>
+</html>
+
+
